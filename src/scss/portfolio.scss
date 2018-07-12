@@ -1,0 +1,122 @@
+.portfolio {
+
+	.color3 {
+		color: $color1;
+	}
+
+	.row {
+		height: 100%;
+	}
+
+	.content-area {
+		background: white;
+		height: 100%;
+	
+
+		h1 {
+			font-weight: 700;
+			font-size: 2rem;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		h5 {
+			font-weight: 500;
+			font-size: 1.3rem;
+			margin-bottom: 1.4rem;
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+
+		.work-section {
+			margin-bottom: 50px;
+			height: 100%;
+			.project-section {
+			margin-left:2px;
+			width: 95%;
+			height: 90%;
+			.work-box {
+				position: relative;
+				display: flex;
+  				height: 50%;
+				padding: 20px 30px 0px 10px;
+				transition: all .5s ease-in-out;
+				cursor: pointer;
+				margin-bottom: 2px;
+				/* background: url(https://cdn.dribbble.com/users/1002086/screenshots/4801576/800x600.png) no-repeat center center; 
+				 -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover; */
+				  .gray-bg {
+				  	background-color: #efefef;
+				  	position: absolute;
+				  	top: 0;
+				  	bottom: 0;
+				  	left: 0;
+				  	right: 0;
+				  	opacity: 0;
+				  	transition: all 0.2s ease-in-out;
+				  	overflow: hidden;
+
+				  	&:hover {
+				  		opacity: 0.7;
+				  		.project-info {
+				  			.project-details {
+				  				transform: translate3D(0, 0, 0);
+				  			}
+				  			.project-title {
+				  				transform: translate3D(0, 0, 0);
+				  			}
+				  		}
+				  	}
+
+				  	.project-info {
+				  		position: absolute;
+				  		bottom: 0;
+				  		padding: 30px;
+				  		width: 100%;
+
+				  		.fa-long-arrow-right {
+				  			position: absolute;
+				  			bottom: 40px;
+				  			right: 40px;
+				  			font-weight: 100;
+				  			font-size: 2rem;
+				  		}
+				  		.project-details {
+				  			font-size: 1.1rem;
+				  			text-transform: capitalise;
+				  			margin-bottom: 15px;
+				  			span {
+				  				font-weight: 700;
+				  			}
+				  			transform: translate3D(-100px, 0, 0);
+				  			transition: all .4s ease-in-out;
+				  		}
+
+				  		.project-title {
+				  			font-size: 1.8rem;
+				  			font-weight: 500;
+				  			text-transform: uppercase;
+				  			transform: translate3D(100px, 0, 0);
+				  			transition: all .4s ease-in-out;
+				  		}
+
+				  	}
+
+				 }
+
+				&:hover {
+				-webkit-box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
+				-moz-box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
+				box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
+				}
+
+			}
+		}
+		}
+	}
+}
+

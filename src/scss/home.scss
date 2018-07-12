@@ -1,0 +1,293 @@
+.home {
+
+	.color3 {
+		color: $color1;
+	}
+
+	.row {
+		height: 100%;
+	}
+
+	.content-area {
+		background: white;
+		height: 100%;
+		display: flex;
+		.img-container {
+			height: 100%;
+			width: 80%;
+			margin: 0 0 0 -25%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				height: 600px;
+				width: 350px;
+				border: 1px solid black;
+				-webkit-box-shadow: 10px 10px 70px 0px rgba(8,36,150,0.52);
+				-moz-box-shadow: 10px 10px 70px 0px rgba(8,36,150,0.52);
+				box-shadow: 10px 10px 70px 0px rgba(8,36,150,0.52);
+			}
+		}
+
+		.profile-section {
+			display: inline-flex;
+			align-items: center;
+			margin: 20px;
+			.profile {
+				h1 {
+					font-size: 2.3rem;
+					font-weight: 700;
+					margin: -20px 0 1.5rem 0;
+				}
+
+				h5 {
+					font-size: 1.3rem;
+					margin: 0 0 1.5rem;
+				}
+
+				p {
+					color: $color5;
+					font-weight: 400;
+					line-height: 1.4;
+					margin: 0 0 2rem 0;
+				}
+			}
+		}
+	}
+}
+
+
+/*small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.home {
+
+		.info-section {
+			.info-box {
+				display: none;
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			display: flex;
+			flex-direction: column;
+
+			.profile-section {
+				display: flex;
+				margin-top:20%;
+				.profile {
+					text-align: center;
+					margin: 0 0% 5%;
+					position: absolute;
+					bottom: -50%;
+					width: 90%;
+
+					h1 {
+						padding-right: 10px;
+					}
+
+					.button-section {
+						margin: 0 0 0 0%;
+					}
+				}
+			}
+
+			.img-container {
+				img {
+					position: absolute;
+					left: 11%;
+					width: 75%;
+					top: 5%;
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+		}
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+	.home {
+		.info-section {
+			.info-box {
+				position: absolute;
+				left: 37%;
+				bottom: 27%;
+				p, h4 {
+					display: none;
+				}
+				.icon-section {
+					display: inline-flex;
+					a {
+						margin: 0 10%;
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 2%;
+			}
+
+			.profile-section {
+				.profile {
+
+					.button-section {
+						display: block;
+
+						.ghost-btn {
+							margin: 10% 0;
+						}
+
+						.primary-btn {
+							margin-top: 5%;
+						}
+					}
+
+					p {
+						display: none;
+					}
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+
+		}
+
+	}
+} 
+
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.home {
+		.info-section {
+			.info-box {
+				position: absolute;
+				left: 37%;
+				bottom: 27%;
+				p, h4 {
+					display: none;
+				}
+				.icon-section {
+					display: inline-flex;
+					a {
+						margin: 0 20%;
+						&:first-child {
+							margin-left: -20%;
+						}
+					}
+				}
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 2%;
+			}
+
+			.profile-section {
+				.profile {
+					transition: all .5s ease-in-out;
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+
+		}
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.home {
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 -17%;
+			}
+		}
+
+
+
+		.info-section {
+			width: 100%;
+			/*.info-box {
+				width: 140px;
+				p {
+					word-wrap: break-word;
+					width: 110px;
+				}
+
+				a {
+					font-size: 1rem;
+				} 
+
+			} */
+
+			.logo {
+				font-size: 2.7rem;
+				width: 120px;
+			}
+		}
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

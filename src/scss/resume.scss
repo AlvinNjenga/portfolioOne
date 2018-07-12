@@ -1,0 +1,71 @@
+.resume {
+
+	.color3 {
+		color: $color1;
+	}
+
+	.row {
+		height: 100%;
+	}
+
+	.content-area {
+		background: white;
+		height: 100%;
+	
+
+		h1 {
+			font-weight: 700;
+			font-size: 2rem;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		h5 {
+			font-weight: 500;
+			font-size: 1.3rem;
+			margin-bottom: 1.4rem;
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+
+		.category {
+			margin-bottom: 50px;
+			.xp-section {
+			margin-left:2px;
+			width: 95%;
+			height: 90%;
+			.xp-box {
+				padding: 20px 30px 0px 10px;
+				transition: all .5s ease-in-out;
+				cursor: pointer;
+
+				&:hover {
+				-webkit-box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
+				-moz-box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
+				box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
+				}
+
+			}
+		}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
