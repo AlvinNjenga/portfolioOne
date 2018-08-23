@@ -30,20 +30,20 @@
 		}
 
 		.work-section {
-			margin-bottom: 50px;
 			height: 100%;
 			.project-section {
 			margin-left:2px;
 			width: 95%;
-			height: 90%;
+			height: 100%;
 			.work-box {
 				position: relative;
 				display: flex;
-  				height: 50%;
+				height: 50%;
+				min-width: 50%;
 				padding: 20px 30px 0px 10px;
 				transition: all .5s ease-in-out;
 				cursor: pointer;
-				margin-bottom: 2px;
+				margin-bottom: 10px;
 				/* background: url(https://cdn.dribbble.com/users/1002086/screenshots/4801576/800x600.png) no-repeat center center; 
 				 -webkit-background-size: cover;
 				  -moz-background-size: cover;
@@ -61,7 +61,7 @@
 				  	overflow: hidden;
 
 				  	&:hover {
-				  		opacity: 0.7;
+				  		opacity: 0.5;
 				  		.project-info {
 				  			.project-details {
 				  				transform: translate3D(0, 0, 0);
@@ -113,10 +113,214 @@
 				-moz-box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
 				box-shadow: 0px 10px 70px 0px rgba(8,36,150,0.20);
 				}
-
+				
+				&:last-child {
+					margin-bottom: 50px;
+				}
 			}
 		}
 		}
 	}
 }
+
+/*small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	.scrolling-section {
+		height: 100vh;
+		overflow-y: scroll;
+		over-flow-x: hidden;
+		padding: 20px!important;
+	}
+	
+	.portfolio {
+		.info-section {
+			.info-box {
+				display: none;
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			display: flex;
+			flex-direction: column;
+			.work-section{
+				.work-box {
+					height: 35%!important;
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+		}
+	}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+	.portfolio {
+		.info-section {
+			.info-box {
+				position: absolute;
+				left: 37%;
+				bottom: 27%;
+				p, h4 {
+					display: none;
+				}
+				.icon-section {
+					display: inline-flex;
+					a {
+						margin: 0 10%;
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 2%;
+			}
+
+			.profile-section {
+				.profile {
+
+					.button-section {
+						display: block;
+
+						.ghost-btn {
+							margin: 10% 0;
+						}
+
+						.primary-btn {
+							margin-top: 5%;
+						}
+					}
+
+					p {
+						display: none;
+					}
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+
+		}
+
+	}
+} 
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.portfolio {
+		.info-section {
+			.info-box {
+				position: absolute;
+				left: 37%;
+				bottom: 27%;
+				p, h4 {
+					display: none;
+				}
+				.icon-section {
+					display: inline-flex;
+					a {
+						margin: 0 20%;
+						&:first-child {
+							margin-left: -20%;
+						}
+					}
+				}
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 2%;
+			}
+
+			.profile-section {
+				.profile {
+					transition: all .5s ease-in-out;
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+
+		}
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.portfolio {
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 -17%;
+			}
+		}
+
+		.profile {
+			font-size: 20px;
+		}
+
+		.info-section {
+			width: 100%;
+			/*.info-box {
+				width: 140px;
+				p {
+					word-wrap: break-word;
+					width: 110px;
+				}
+
+				a {
+					font-size: 1rem;
+				} 
+
+			} */
+
+			.logo {
+				font-size: 2.7rem;
+				width: 120px;
+			}
+		}
+	}
+} 
 

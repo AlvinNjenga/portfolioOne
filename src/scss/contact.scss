@@ -89,6 +89,15 @@
 					font-size: 2.3rem;
 					font-weight: 700;
 					margin: 100px 10px 2rem 0;
+					text-align: center;
+					&::after{
+						content: ""; 
+						display: block;
+						margin: 0 auto; /* This will center the border. */
+						width: 50%; /* Change this to whatever width you want. */
+						padding-top: 10px; /* This creates some space between the element and the border. */
+						border-bottom: 2px solid black; /* This creates the border. Replace black with whatever color you want. */
+					}
 				}
 
 				h5 {
@@ -109,7 +118,257 @@
 }
 
 
+/*small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.contact {
+		.info-section {
+			.info-box {
+				display: none;
+			}
 
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			display: flex;
+			flex-direction: column;
+
+			.profile-section {
+				display: flex;
+				margin-top:20%;
+				.profile {
+					text-align: center;
+					margin: 0 0% 5%;
+					position: absolute;
+					bottom: -50%;
+					width: 90%;
+
+					h1 {
+						padding-right: 10px;
+					}
+
+					.button-section {
+						margin: 0 0 0 0%;
+					}
+				}
+			}
+
+			.img-container {
+				position: absolute;
+				margin: 0;
+				width: 75%;
+				top: 0%;
+				left: 13%;
+				.form-section {
+					width: 100%;
+				}
+			}
+			.contact-section {
+				padding: 920px 0 0 0!important;
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+		}
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+	.contact {
+		.info-section {
+			.info-box {
+				position: absolute;
+				left: 37%;
+				bottom: 27%;
+				p, h4 {
+					display: none;
+				}
+				.icon-section {
+					display: inline-flex;
+					a {
+						margin: 0 10%;
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			.img-container {
+				position: absolute;
+				margin: 0;
+				width: 75%;
+				top: 0%;
+				left: 13%;
+				.form-section {
+					width: 100%;
+					max-width: 500px;
+				}
+			}
+			.contact-section {
+				padding: 920px 0 0 0!important;
+				.profile {
+					padding-right: 40px!important;
+					padding-left: 60px!important;
+					h1 {
+						padding-bottom: 0px!important;
+					}
+				}
+			}
+
+			.profile-section {
+				.profile {
+
+					.button-section {
+						display: block;
+
+						.ghost-btn {
+							margin: 10% 0;
+						}
+
+						.primary-btn {
+							margin-top: 5%;
+						}
+					}
+
+					p {
+						display: none;
+					}
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+
+		}
+
+	}
+} 
+
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.contact {
+		.info-section {
+			.info-box {
+				position: absolute;
+				left: 37%;
+				bottom: 27%;
+				p, h4 {
+					display: none;
+				}
+				.icon-section {
+					display: inline-flex;
+					a {
+						margin: 0 20%;
+						&:first-child {
+							margin-left: -20%;
+						}
+					}
+				}
+			}
+
+			.logo {
+				margin: 40px 40px;
+			}
+		}
+
+		.content-area {
+			padding-top: 0px!important;
+			.img-container {
+				margin: 0 0 0 2%;
+			}
+			.contact-section{
+				width: 80%;
+				padding: 0 20px 20px 20px;
+				.profile {
+					padding-left: 20px!important;
+					padding-right: 20px!important;
+					h1 {
+						margin: 90px 10px 1rem 0;
+					}
+				}
+			}
+
+			.profile-section {
+				.profile {
+					transition: all .5s ease-in-out;
+				}
+			}
+
+			.menu-icon {
+				position: absolute;
+				top: -80px;
+				.fa {
+					color: white;
+				}
+
+			}
+
+		}
+	}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.contact {
+
+		.content-area {
+			.img-container {
+				margin: 0 0 0 -17%;
+			}
+		}
+
+		.profile {
+			font-size: 20px;
+		}
+
+		.info-section {
+			width: 100%;
+			/*.info-box {
+				width: 140px;
+				p {
+					word-wrap: break-word;
+					width: 110px;
+				}
+
+				a {
+					font-size: 1rem;
+				} 
+
+			} */
+
+			.logo {
+				font-size: 2.7rem;
+				width: 120px;
+			}
+		}
+	}
+} 
 
 
 

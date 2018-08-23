@@ -34,6 +34,7 @@
 			align-items: center;
 			margin: 20px;
 			.profile {
+				text-align: center;
 				h1 {
 					font-size: 2.3rem;
 					font-weight: 700;
@@ -248,7 +249,9 @@
 			}
 		}
 
-
+		.profile {
+			font-size: 20px;
+		}
 
 		.info-section {
 			width: 100%;
@@ -273,8 +276,7 @@
 	}
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...}*/
+
 
 
 

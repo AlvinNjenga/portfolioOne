@@ -5,6 +5,7 @@
 @import "infoSection";
 @import "portfolio";
 @import "contact";
+@import "media.scss";
 
 
 html, body {
@@ -37,10 +38,14 @@ html, body {
 		top: 26px;
 		padding: 20px;
 		z-index: 11;
-
 	.fa {
 		font-size: 2rem;
 		color: $color2;
+		transition: $btnTransition;
+		&:hover {
+			color: $hoverColor;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -97,7 +102,7 @@ html, body {
 #menu {
 	background-color: $color1; 
 	position: fixed;
-	transform: translate3d(-140%, 0, 0);
+	transform: translate3d(140%, 0, 0);
 	top: 0;
 	bottom: 0;
 	width: 100%;
@@ -105,7 +110,7 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: 1;
+	opacity: 0;
 	transition: all .8s ease-in-out;
 
 	nav {
@@ -131,6 +136,10 @@ html, body {
 	.menu-icon {
 		.fa {
 			color: white;
+			&:hover {
+				color: $hoverColor;
+				cursor: pointer;
+			}
 		}
 	}
 	#menu {
@@ -139,12 +148,13 @@ html, body {
 		right: 0;
 		left: 0;
 		transform: translate3d(0, 0, 0);
+		opacity: 1;
 	}
 } 
 
 .scrolling-section {
 	height: 100vh;
 	overflow-y: scroll;
-	over-flow-x: hidden;
+	overflow-x: hidden;
 	padding: 50px;
 }
